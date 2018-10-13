@@ -1,0 +1,47 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent  {
+    testclassObj = new testclass("raneh");
+  name = 'Angular' + this.testclassObj.greet();
+}
+export class testclass
+{
+   message: string;
+  constructor(msg : string)
+  {
+    this.message=msg;
+  }
+greet() {
+  
+  let fullName: string = `Bob Bobbington`;
+let age: number = 37;
+let sentence: string = `Hello, my name is ${ fullName }.
+
+I'll be ${ age + 1 } years old next month.`;
+let color: string ='blue';
+let num: number =5;
+
+
+        return `${ num } Hello, `+ color.concat('     1 nnn');
+        ;
+    }
+
+}
+let arr:Array<number>=[1,2,4,5];
+console.log(" Array"+arr[2])
+let a:number;
+let b : String ="ashish";
+a=6;
+let code = b.charCodeAt(0);
+
+function abc(){
+  console.log(" a b value" + a +b +"code"+code)
+}
+
+abc();
+
